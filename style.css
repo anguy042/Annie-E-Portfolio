@@ -21,6 +21,20 @@ p{
 li{
     list-style: none;
 }
+.flex{
+    display: flex;
+}
+
+.flex-1{
+    flex:1;
+}
+
+.row{
+    width: 100%;
+    max-width: 800px;
+    margin:0 auto;
+}
+
 /* NAVIGATION BAR */
 
 nav{
@@ -31,6 +45,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .nav__link--list{
@@ -41,9 +56,48 @@ nav{
     margin: 0 12px;
     color: #242424;
     text-decoration: none;
+    font-weight: 700;
+}
+
+.nav__link--anchor-primary{
+    background-color: royalblue;
+    padding: 8px 20px;
+    border-radius: 50px;
+    transition: all 300ms ease;
+    color: aliceblue;
+
+}
+
+.nav__link--anchor-primary:hover{
+    background-color: #1d49cc;
 }
 
 .personal__logo{
-
+    font-size: 24px;
+    color: royalblue;
+    margin: 0 12px;
+    font-weight: bold;
 }
 
+/* ABOUT ME*/
+
+#about-me{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-me__info--container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-me__picture--mask{
+    width: 100px;
+    height: 100px;
+}
+
+.about-me__picture{
+    width: 100%;
+}
